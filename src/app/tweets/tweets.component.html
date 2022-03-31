@@ -1,0 +1,24 @@
+<h4>Tweet</h4>
+<div class="row tweetContainer" *ngFor="let tweet of tweets">
+  <div class="col-1">
+    <img [src]="tweet.profilepic" class="profilepic">
+  </div>
+  <div class="col-11">
+    <div class="unameContainer">
+      <span class="uname fw-bold">{{ tweet.username }} </span>
+      <span class="handle">{{ tweet.twitterhandle }} </span>
+      <span class="time"> . 21h</span>
+    </div>
+    <div class="feed">
+      {{ tweet.feed }}
+    </div>
+    <div class="social">
+      <div class="row">
+        <div class="col-3">{{ tweet.comments }}</div>
+        <div class="col-3">{{ tweet.retweets }}</div>
+        <div class="col-3">{{ tweet.likes }}</div>
+        <div class="col-3">share</div>
+      </div>
+    </div>
+  </div>
+</div>
