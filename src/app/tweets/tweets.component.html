@@ -16,8 +16,9 @@
       <div class="row">
         <div class="col-3">{{ tweet.comments }}</div>
         <div class="col-3">{{ tweet.retweets }}</div>
-        <div class="col-3"> <like></like> {{ tweet.likes }} </div>
+        <div class="col-3"> <like [totalLikes]="tweet.likes"></like>  </div>
         <div class="col-3">share</div>
+
       </div>
     </div>
   </div>

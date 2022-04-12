@@ -7,7 +7,7 @@ import { Tweet } from './tweet';
   styleUrls: ['./tweets.component.scss']
 })
 export class TweetsComponent implements OnInit {
-
+  //JSON is data from the server
   tweets:Tweet[] = [
     {
       profilepic: 'assets/profilepics/profile1.jpeg',
@@ -25,7 +25,7 @@ export class TweetsComponent implements OnInit {
       feed: "This is my first tweet",
       comments: 100,
       retweets: 10,
-      likes: 300
+      likes:2300
     },
     {
       profilepic: 'assets/profilepics/profile1.jpeg',
@@ -34,7 +34,7 @@ export class TweetsComponent implements OnInit {
       feed: "This is my first tweet",
       comments: 100,
       retweets: 10,
-      likes: 300
+      likes: 10
     },
     {
       profilepic: 'assets/profilepics/profile1.jpeg',
@@ -43,7 +43,7 @@ export class TweetsComponent implements OnInit {
       feed: "This is my first tweet",
       comments: 100,
       retweets: 10,
-      likes: 300
+      likes: 456
     },
   ]
 
